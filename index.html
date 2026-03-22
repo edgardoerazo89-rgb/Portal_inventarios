@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Portal de Dealers | Erazo Cars Houston</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    html { scroll-behavior: smooth; }
+    body.mobile .device-only-desktop { display: none !important; }
+    body.desktop .device-only-mobile { display: none !important; }
+
+    @media (max-width: 767px) {
+      .mobile-safe-padding { padding-bottom: 110px; }
+      .card-hover-mobile { transform: none !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,0.14),_transparent_30%)]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-8 md:py-12 mobile-safe-padding">
+    <header class="mb-6 sm:mb-10">
+      <div class="rounded-[28px] border border-white/10 bg-white/5 glass shadow-2xl p-4 sm:p-6 md:p-8">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 sm:gap-6">
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+              <p class="text-[11px] sm:text-sm uppercase tracking-[0.24em] sm:tracking-[0.3em] text-sky-300 font-semibold">
+                Erazo Cars Houston
+              </p>
+              <span id="deviceBadge" class="inline-flex items-center rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[11px] sm:text-xs text-slate-200">
+                Detectando dispositivo...
+              </span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-tight">
+              Portal Central de Dealers
+            </h1>
+
+            <p id="deviceMessage" class="text-slate-300 mt-3 max-w-2xl text-sm md:text-base leading-relaxed">
+              Acceso rápido para el equipo. Selecciona un dealer y abre su inventario en una nueva pestaña.
+            </p>
+
+            <div class="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-3">
+              <a href="#banco" class="inline-flex items-center justify-center rounded-2xl border border-sky-400/20 bg-sky-500/10 px-4 py-3 text-sm font-semibold text-sky-300 hover:bg-sky-500/15 transition">
+                Ir a Banco
+              </a>
+              <a href="#casa" class="inline-flex items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-500/10 px-4 py-3 text-sm font-semibold text-emerald-300 hover:bg-emerald-500/15 transition">
+                Ir a En Casa
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 w-full lg:w-auto lg:min-w-[250px]">
+            <div class="rounded-2xl bg-sky-500/10 border border-sky-400/20 p-4 text-center">
+              <div class="text-2xl font-bold">4</div>
+              <div class="text-xs text-slate-300">Por Banco</div>
+            </div>
+            <div class="rounded-2xl bg-emerald-500/10 border border-emerald-400/20 p-4 text-center">
+              <div class="text-2xl font-bold">5</div>
+              <div class="text-xs text-slate-300">En Casa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="space-y-8 sm:space-y-10">
+      <section id="banco">
+        <div class="flex items-start sm:items-center gap-3 mb-4 sm:mb-5">
+          <div class="h-10 w-10 rounded-2xl bg-sky-500/15 border border-sky-400/20 flex items-center justify-center text-sky-300 text-lg shrink-0">🏦</div>
+          <div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold">Financiamiento por Banco</h2>
+            <p class="text-slate-400 text-sm">Dealers con inventario para financiamiento bancario.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Astro Auto World</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-400/20 shrink-0">Banco</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 10803 Paulus Dr Ste I | Houston, TX 77041</p>
+            <p class="mt-2 text-slate-400 text-sm">Inventario general del dealer.</p>
+            <a href="https://www.astroautoworld.com/cars-for-sale" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-sky-500 hover:bg-sky-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Metacars TX</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-400/20 shrink-0">Banco</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 4833 Pinemont Dr | Houston, TX 77092</p>
+            <p class="mt-2 text-slate-400 text-sm">Inventario general del dealer.</p>
+            <a href="https://www.metacarstx.com/inventory/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-sky-500 hover:bg-sky-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Andy Cars TX</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-400/20 shrink-0">Banco</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 10006 Aldine Westfield Rd | Houston, TX 77093</p>
+            <p class="mt-2 text-slate-400 text-sm">Inventario general del dealer.</p>
+            <a href="https://www.andycarstx.com/inventory/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-sky-500 hover:bg-sky-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Allstar Motors</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-400/20 shrink-0">Banco</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 8475 Highway 6 S | Houston, TX 77083</p>
+            <p class="mt-2 text-slate-400 text-sm">Inventario general del dealer.</p>
+            <a href="https://www.allstarsmotors.com/inventory/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-sky-500 hover:bg-sky-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="casa">
+        <div class="flex items-start sm:items-center gap-3 mb-4 sm:mb-5">
+          <div class="h-10 w-10 rounded-2xl bg-emerald-500/15 border border-emerald-400/20 flex items-center justify-center text-emerald-300 text-lg shrink-0">🏠</div>
+          <div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold">Financiamiento en Casa</h2>
+            <p class="text-slate-400 text-sm">Dealers con financiamiento directo.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Vamos Auto</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20 shrink-0">En Casa</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 10831 Gulf Fwy | Houston, TX 77034</p>
+            <p class="mt-2 text-slate-400 text-sm">Inventario del lote de Houston.</p>
+            <a href="https://vamosauto.us/search/?location=vamos-auto-houston&current-page=1&sort-by=newest" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Amigos Cars & Trucks</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20 shrink-0">En Casa</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 7001 Airline Dr | Houston, TX 77076</p>
+            <p class="mt-2 text-slate-400 text-sm">Segunda localidad: 6849 Ave T | Houston, TX 77011.</p>
+            <a href="https://www.amigoscarsandtrucks.com/vehicle_listings/all/vehicles" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Auto Finance Center</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20 shrink-0">En Casa</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 9640 Telephone Rd | Houston, TX 77075</p>
+            <p class="mt-2 text-slate-400 text-sm">Abierto los domingos.</p>
+            <a href="https://afccarstx.com/inventario/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">Popular Motors Houston</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20 shrink-0">En Casa</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 1842 Wirt Rd | Houston, TX 77055</p>
+            <p class="mt-2 text-slate-400 text-sm">Autos de años recientes con bajo down payment.</p>
+            <a href="https://www.popularmotorshouston.com/autos" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+
+          <article class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5 shadow-xl hover:-translate-y-1 card-hover-mobile transition duration-200">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">USA Auto Brokers</h3>
+              <span class="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20 shrink-0">En Casa</span>
+            </div>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">📍 1701 N. Shepherd Dr | Houston, TX 77008</p>
+            <p class="mt-2 text-slate-400 text-sm">Abierto de 10:00 AM a 9:00 PM, lunes a sábado.</p>
+            <a href="https://www.usaridetoday.com/cars-for-sale" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.99] text-slate-950 font-semibold px-4 py-3 transition">
+              Abrir inventario
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-8 sm:mt-10 text-center text-slate-400 text-sm">
+      <div class="rounded-[28px] border border-white/10 bg-white/5 p-4 sm:p-5">
+        Portal interno de accesos rápidos. Los enlaces abren en una nueva pestaña.
+      </div>
+    </footer>
+  </div>
+
+  <div id="mobileQuickNav" class="device-only-mobile fixed bottom-0 inset-x-0 z-50 p-3">
+    <div class="mx-auto max-w-md rounded-3xl border border-white/10 bg-slate-900/90 glass shadow-2xl px-3 py-3">
+      <div class="grid grid-cols-2 gap-3">
+        <a href="#banco" class="inline-flex items-center justify-center rounded-2xl bg-sky-500 text-slate-950 font-semibold min-h-[48px] px-4">
+          Banco
+        </a>
+        <a href="#casa" class="inline-flex items-center justify-center rounded-2xl bg-emerald-500 text-slate-950 font-semibold min-h-[48px] px-4">
+          En Casa
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const isTouch = window.matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0;
+      const isSmallScreen = window.innerWidth < 768;
+      const isMobileUA = /android|iphone|ipad|ipod|iemobile|opera mini|mobile/i.test(ua);
+      const isMobile = isMobileUA || (isTouch && isSmallScreen);
+
+      document.body.classList.add(isMobile ? 'mobile' : 'desktop');
+
+      const badge = document.getElementById('deviceBadge');
+      const message = document.getElementById('deviceMessage');
+
+      if (isMobile) {
+        badge.textContent = 'Modo móvil detectado';
+        badge.className = 'inline-flex items-center rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-[11px] sm:text-xs text-emerald-300';
+        message.textContent = 'Puedes revisar si un auto está disponible según la página web de cada dealer.';
+      } else {
+        badge.textContent = 'Modo PC detectado';
+        badge.className = 'inline-flex items-center rounded-full border border-sky-400/20 bg-sky-500/10 px-3 py-1 text-[11px] sm:text-xs text-sky-300';
+        message.textContent = 'Vista optimizada para computadora: más espacio horizontal, navegación cómoda y panel limpio para trabajar más rápido.';
+      }
+    })();
+  </script>
+</body>
+</html>
